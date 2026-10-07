@@ -1,0 +1,133 @@
+/* =========================================
+   Base Styles
+   ========================================= */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+h1 {
+    font-size: clamp(
+        2.25rem,
+        5vw,
+        var(--font-size-5xl)
+    );
+}
+
+h2 {
+    font-size: clamp(
+        1.75rem,
+        4vw,
+        var(--font-size-4xl)
+    );
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+}
+
+p {
+    color: var(--color-muted);
+}
+
+a {
+    transition:
+        color var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+    border-radius: var(--radius-sm);
+}
+
+.container {
+    width: min(
+        calc(100% - 2rem),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+.eyebrow {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-primary);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.content-section {
+    padding-block: var(--space-16);
+}
+
+.content-section h2 {
+    margin-bottom: var(--space-4);
+}
+
+.content-section p {
+    max-width: 720px;
+}
+
+/* =========================================
+   Reduced Motion
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

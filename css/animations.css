@@ -1,0 +1,52 @@
+/* =========================================
+   Animation Foundation
+   ========================================= */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation:
+        fade-in
+        var(--transition-slow)
+        both;
+}
+
+.animate-fade-up {
+    animation:
+        fade-up
+        var(--transition-slow)
+        both;
+}
+
+
+/* =========================================
+   Reduced Motion
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .animate-fade-in,
+    .animate-fade-up {
+        animation: none;
+    }
+}

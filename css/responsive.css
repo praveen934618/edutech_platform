@@ -1,0 +1,125 @@
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .site-navigation {
+        flex-wrap: wrap;
+
+        padding-block: var(--space-4);
+    }
+
+    .site-navigation__links {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: var(--space-4);
+    }
+
+    .grid--4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid--3,
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 640px) {
+
+    .container {
+        width: min(
+            calc(100% - 1.5rem),
+            var(--container-width)
+        );
+    }
+
+    .site-navigation {
+        position: relative;
+
+        min-height: 64px;
+
+        flex-wrap: wrap;
+        align-items: center;
+
+        padding-block: var(--space-3);
+    }
+
+    .site-logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .site-navigation__links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding-top: var(--space-3);
+    }
+
+    .site-navigation__links.is-open {
+        display: flex;
+    }
+
+    .site-navigation__links a {
+        width: 100%;
+
+        padding:
+            var(--space-3)
+            var(--space-2);
+
+        border-top: 1px solid var(--color-border);
+
+        color: var(--color-text);
+
+        font-size: var(--font-size-md);
+    }
+
+    .site-navigation__links a:hover,
+    .site-navigation__links a:focus-visible {
+        background: var(--color-background);
+        color: var(--color-primary);
+    }
+
+    .hero-section {
+        padding-block: var(--space-16);
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .grid--2,
+    .grid--3,
+    .grid--4,
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section,
+    .page-section {
+        padding-block: var(--space-12);
+    }
+}
