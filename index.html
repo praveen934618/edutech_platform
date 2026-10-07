@@ -31,40 +31,7 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <nav class="site-navigation" aria-label="Main navigation">
-
-    <a href="index.html" class="site-logo">
-        Education Platform
-    </a>
-
-    <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-    >
-        <span class="menu-toggle__line"></span>
-        <span class="menu-toggle__line"></span>
-        <span class="menu-toggle__line"></span>
-    </button>
-
-    <div
-        class="site-navigation__links"
-        id="main-navigation"
-    >
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
-    </div>
-
-</nav>
-        </div>
-    </header>
+    <div id="site-navbar"></div>
 
     <main>
 
@@ -122,18 +89,10 @@
 
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
+<div id="site-footer"></div>
 
-            <p>
-                &copy;
-                <span id="current-year"></span>
-                Education Platform
-            </p>
-
-        </div>
-    </footer>
-
+    <script src="js/components/navbar.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
     <script src="js/public/home.js" defer></script>
 
 </body>
