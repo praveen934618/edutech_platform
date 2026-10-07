@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sign in to your education platform account."
+    >
+
+    <meta
+        name="robots"
+        content="noindex,nofollow"
+    >
+
+    <title>Sign In | Education Platform</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <div id="site-navbar"></div>
+
+    <main>
+
+        <section class="content-section">
+            <div class="container">
+
+                <div class="content-width content-width--small">
+
+                    <p class="eyebrow">
+                        Account
+                    </p>
+
+                    <h1>
+                        Sign In
+                    </h1>
+
+                    <p>
+                        Sign in to access your learning
+                        experience.
+                    </p>
+
+                    <form
+                        id="login-form"
+                        class="form"
+                        novalidate
+                    >
+
+                        <div class="form-group">
+
+                            <label for="login-email">
+                                Email
+                            </label>
+
+                            <input
+                                id="login-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="login-password">
+                                Password
+                            </label>
+
+                            <input
+                                id="login-password"
+                                name="password"
+                                type="password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+                                <input
+                                    id="login-remember"
+                                    name="remember"
+                                    type="checkbox"
+                                >
+
+                                Remember me
+                            </label>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="button button--primary"
+                        >
+                            Sign In
+                        </button>
+
+                        <div
+                            id="login-form-state"
+                            class="state"
+                            aria-live="polite"
+                            hidden
+                        ></div>
+
+                    </form>
+
+                    <p>
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </p>
+
+                    <p>
+                        Don't have an account?
+                        <a href="register.html">
+                            Create an account
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/components/navbar.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
+
+</body>
+</html>
