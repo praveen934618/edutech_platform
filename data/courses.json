@@ -1,0 +1,293 @@
+[
+  {
+    "id": "python-programming",
+    "slug": "python-programming",
+    "title": "Python Programming & Automation",
+    "category": "Programming",
+    "shortDescription": "Learn Python from fundamentals to practical script automation and data handling.",
+    "description": "A comprehensive practical Python course covering programming fundamentals, object-oriented systems, file pipelines, databases, and real-world project automation.",
+    "level": "Beginner",
+    "duration": "8 Weeks",
+    "mode": "Online",
+    "price": 4999,
+    "currency": "INR",
+    "featured": true,
+    "image": "assets/images/courses/python.jpg",
+    "instructor": {
+      "name": "Coach Arnold White",
+      "role": "Senior Python Architect",
+      "avatar": "assets/images/instructors/alex.jpg"
+    },
+    "stats": {
+      "flameValue": "551",
+      "flameLabel": "XP",
+      "durationValue": "25",
+      "durationLabel": "modules",
+      "scoreValue": "+3",
+      "scoreLabel": "score"
+    },
+    "skills": [
+      "Python 3",
+      "Automation",
+      "OOP",
+      "Data Structures",
+      "API Integration"
+    ],
+    "modules": [
+      {
+        "title": "Python Fundamentals",
+        "lessons": [
+          "Introduction to Python",
+          "Variables & Data Types",
+          "Conditionals & Loops"
+        ]
+      },
+      {
+        "title": "Object-Oriented Programming",
+        "lessons": [
+          "Classes & Objects",
+          "Inheritance & Methods"
+        ]
+      },
+      {
+        "title": "Practical Automation Project",
+        "lessons": [
+          "Automation Scripts",
+          "Final Capstone Project"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cyber-security",
+    "slug": "cyber-security",
+    "title": "Cyber Security & Ethical Defense",
+    "category": "Cybersecurity",
+    "shortDescription": "Master cybersecurity fundamentals, network defense, and threat analysis.",
+    "description": "Learn hands-on network protection, authentication vulnerability assessment, cryptographic protocols, and secure system engineering.",
+    "level": "Intermediate",
+    "duration": "10 Weeks",
+    "mode": "Online",
+    "price": 7999,
+    "currency": "INR",
+    "featured": true,
+    "image": "assets/images/courses/cybersecurity.jpg",
+    "instructor": {
+      "name": "Coach Marcus Rivera",
+      "role": "Security Architect & Certified Ethical Hacker",
+      "avatar": "assets/images/instructors/alex.jpg"
+    },
+    "stats": {
+      "flameValue": "620",
+      "flameLabel": "XP",
+      "durationValue": "32",
+      "durationLabel": "modules",
+      "scoreValue": "+4",
+      "scoreLabel": "score"
+    },
+    "skills": [
+      "Network Security",
+      "Threat Analysis",
+      "Firewalls",
+      "Penetration Testing",
+      "Cryptography"
+    ],
+    "modules": [
+      {
+        "title": "Security Fundamentals",
+        "lessons": [
+          "Network Topologies",
+          "Vulnerabilities & Attack Vectors"
+        ]
+      },
+      {
+        "title": "Defense Architecture",
+        "lessons": [
+          "Firewalls & IDS",
+          "Identity & Access Management"
+        ]
+      },
+      {
+        "title": "Incident Response Lab",
+        "lessons": [
+          "Threat Mitigation",
+          "Security Audit Capstone"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "slug": "data-analytics",
+    "title": "Data Analytics & Business Intelligence",
+    "category": "Data & Analytics",
+    "shortDescription": "Analyze datasets, build interactive dashboards, and drive business decisions.",
+    "description": "Understand exploratory data analysis, KPI visualization, statistical modeling, SQL transformations, and modern business intelligence tools.",
+    "level": "Beginner",
+    "duration": "10 Weeks",
+    "mode": "Online",
+    "price": 6999,
+    "currency": "INR",
+    "featured": true,
+    "image": "assets/images/courses/data-analytics.jpg",
+    "instructor": {
+      "name": "Coach Sarah Chen",
+      "role": "Principal Data Analyst",
+      "avatar": "assets/images/instructors/sarah.jpg"
+    },
+    "stats": {
+      "flameValue": "580",
+      "flameLabel": "XP",
+      "durationValue": "28",
+      "durationLabel": "modules",
+      "scoreValue": "+3",
+      "scoreLabel": "score"
+    },
+    "skills": [
+      "SQL",
+      "Power BI",
+      "Data Visualization",
+      "Pandas",
+      "Statistical Insights"
+    ],
+    "modules": [
+      {
+        "title": "Data Foundations",
+        "lessons": [
+          "Data Cleaning & Wrangling",
+          "Aggregation Techniques"
+        ]
+      },
+      {
+        "title": "Dashboard Design",
+        "lessons": [
+          "Visual Metrics",
+          "Interactive Reports"
+        ]
+      },
+      {
+        "title": "Real-world Analytics Project",
+        "lessons": [
+          "Business Case Study",
+          "Executive Insights Presentation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "full-stack-development",
+    "slug": "full-stack-development",
+    "title": "Full-Stack Web & Cloud Architecture",
+    "category": "Web Development",
+    "shortDescription": "Build scalable web applications from interactive UI to cloud databases.",
+    "description": "A comprehensive practical track covering modern frontend frameworks, Node.js backend services, RESTful APIs, and database deployment.",
+    "level": "Intermediate",
+    "duration": "16 Weeks",
+    "mode": "Online",
+    "price": 12999,
+    "currency": "INR",
+    "featured": true,
+    "image": "assets/images/courses/fullstack.jpg",
+    "instructor": {
+      "name": "Coach Elena Rostova",
+      "role": "Full-Stack Tech Lead",
+      "avatar": "assets/images/instructors/sarah.jpg"
+    },
+    "stats": {
+      "flameValue": "740",
+      "flameLabel": "XP",
+      "durationValue": "42",
+      "durationLabel": "modules",
+      "scoreValue": "+5",
+      "scoreLabel": "score"
+    },
+    "skills": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "REST APIs",
+      "Cloud Deployment"
+    ],
+    "modules": [
+      {
+        "title": "Frontend Engineering",
+        "lessons": [
+          "Component Architecture",
+          "State Management & Hooks"
+        ]
+      },
+      {
+        "title": "Backend Services",
+        "lessons": [
+          "Express & Node APIs",
+          "Database Schemas & Authentication"
+        ]
+      },
+      {
+        "title": "Production Deployment",
+        "lessons": [
+          "CI/CD Pipelines",
+          "Production Cloud Launch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cloud-devops",
+    "slug": "cloud-devops",
+    "title": "Cloud Architecture & DevOps Systems",
+    "category": "Cloud Computing",
+    "shortDescription": "Deploy resilient infrastructure using Docker, Kubernetes, and cloud pipelines.",
+    "description": "Learn containerization, automated build workflows, infrastructure-as-code, and cloud cluster monitoring for enterprise applications.",
+    "level": "Advanced",
+    "duration": "12 Weeks",
+    "mode": "Online",
+    "price": 9999,
+    "currency": "INR",
+    "featured": true,
+    "image": "assets/images/courses/cloud-devops.jpg",
+    "instructor": {
+      "name": "Coach David Vance",
+      "role": "Cloud Systems Architect",
+      "avatar": "assets/images/instructors/alex.jpg"
+    },
+    "stats": {
+      "flameValue": "690",
+      "flameLabel": "XP",
+      "durationValue": "36",
+      "durationLabel": "modules",
+      "scoreValue": "+4",
+      "scoreLabel": "score"
+    },
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD Pipelines",
+      "Terraform",
+      "Cloud Infrastructure"
+    ],
+    "modules": [
+      {
+        "title": "Containerization",
+        "lessons": [
+          "Docker Fundamentals",
+          "Multi-stage Image Builds"
+        ]
+      },
+      {
+        "title": "Kubernetes Orchestration",
+        "lessons": [
+          "Pods, Deployments & Services",
+          "Cluster Networking"
+        ]
+      },
+      {
+        "title": "DevOps Pipeline",
+        "lessons": [
+          "Automated Deployment",
+          "Monitoring & Logging"
+        ]
+      }
+    ]
+  }
+]

@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Explore available courses on the education platform."
-    >
-
-    <meta
-        name="robots"
-        content="index,follow"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore industry-aligned tech courses on Edutech. Hands-on coding sandboxes, expert mentorship, and certified career tracks.">
+    <meta name="robots" content="index,follow">
     <link rel="canonical" href="courses.html">
-
-    <title>Courses | Education Platform</title>
+    <title>Courses | Edutech</title>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -37,54 +24,174 @@
 
     <main>
 
-        <section class="content-section">
-            <div class="container">
+        <!-- Matching Top Hero Section -->
+        <section class="hero-section" aria-label="Courses Hero Section">
+            <div class="hero-container">
 
-                <p class="eyebrow">
-                    Courses
-                </p>
+                <!-- Left Column: Content & Actions -->
+                <div class="hero-content">
+                    <div class="hero-badge" id="hero-eyebrow">
+                        <span class="hero-badge__dot"></span>
+                        <span class="hero-badge__text">Industry-aligned curriculums</span>
+                    </div>
 
-                <h1>
-                    Explore Courses
-                </h1>
+                    <h1 class="hero-title" id="hero-title">
+                        Master modern engineering with <span class="hero-sparkle" aria-hidden="true">✨</span> hands-on labs
+                    </h1>
 
-                <p>
-                    Discover learning opportunities designed
-                    to support your goals and development.
-                </p>
+                    <p class="hero-description" id="hero-description">
+                        Gain verified portfolio proof with production-grade capstones, interactive code sandboxes, and dedicated 1-on-1 mentor guidance tailored for high-growth tech roles.
+                    </p>
+
+                    <!-- Fast Search & Action in Hero -->
+                    <div class="hero-actions">
+                        <a href="#course-catalog" class="hero-btn-primary">
+                            <span class="hero-btn__text">Explore 25+ Tracks</span>
+                            <span class="hero-btn__arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="pricing.html" class="hero-btn-secondary">
+                            <span class="hero-btn__text">View Pricing</span>
+                            <span class="hero-btn__symbol" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                                    <circle cx="2" cy="12" r="1.5"/>
+                                    <rect x="6" y="8" width="3" height="6" rx="1.5"/>
+                                    <rect x="11" y="4" width="3" height="10" rx="1.5"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Progress Graphic & Floating Dock -->
+                <div class="hero-visual" aria-hidden="true">
+                    <!-- Ambient Warm Glow Background with Radiant Stripes -->
+                    <div class="hero-glow">
+                        <div class="hero-glow__beam hero-glow__beam--1"></div>
+                        <div class="hero-glow__beam hero-glow__beam--2"></div>
+                        <div class="hero-glow__beam hero-glow__beam--3"></div>
+                        <div class="hero-glow__beam hero-glow__beam--4"></div>
+                    </div>
+
+                    <!-- Floating Skill Pills -->
+                    <div class="hero-floating-pill hero-floating-pill--left">
+                        <span>Web Development</span>
+                    </div>
+                    <div class="hero-floating-pill hero-floating-pill--top-right">
+                        <span>Cybersecurity</span>
+                    </div>
+                    <div class="hero-floating-pill hero-floating-pill--bottom-right">
+                        <span>Data Analytics</span>
+                    </div>
+
+                    <!-- Main Progress Card -->
+                    <div class="hero-card">
+                        <span class="hero-card__label">Curriculum Mastery Track</span>
+                        <div class="hero-card__score">96%</div>
+
+                        <!-- 4-Column Bar Chart -->
+                        <div class="hero-chart">
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">90%</span>
+                                <div class="hero-chart__bar hero-chart__bar--neutral" style="height: 105px;"></div>
+                                <span class="hero-chart__month">Python</span>
+                            </div>
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">88%</span>
+                                <div class="hero-chart__bar hero-chart__bar--neutral" style="height: 125px;"></div>
+                                <span class="hero-chart__month">Cloud</span>
+                            </div>
+                            <div class="hero-chart__col hero-chart__col--active">
+                                <span class="hero-chart__val">96%</span>
+                                <div class="hero-chart__bar hero-chart__bar--active" style="height: 154px;"></div>
+                                <span class="hero-chart__month">Full-Stack</span>
+                            </div>
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">82%</span>
+                                <div class="hero-chart__bar hero-chart__bar--striped" style="height: 115px;">
+                                    <div class="hero-chart__stripe-texture"></div>
+                                </div>
+                                <span class="hero-chart__month">Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Bottom Dock -->
+                    <div class="hero-dock">
+                        <button type="button" class="hero-dock__btn" aria-label="Course Modules" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="hero-dock__btn" aria-label="Growth Chart" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="hero-dock__btn hero-dock__btn--active" aria-label="Track Progress" tabindex="-1">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <rect x="3" y="12" width="4" height="8" rx="1"/>
+                                <rect x="10" y="8" width="4" height="12" rx="1"/>
+                                <rect x="17" y="4" width="4" height="16" rx="1"/>
+                            </svg>
+                            <span>Catalog</span>
+                        </button>
+                    </div>
+                </div>
 
             </div>
         </section>
 
-        <section class="content-section">
+        <!-- Course Catalog Section -->
+        <section class="content-section" id="course-catalog">
             <div class="container">
 
                 <div class="section-heading">
+                    <p class="eyebrow">
+                        Practical Career Tracks
+                    </p>
+
                     <h2>
-                        Available Courses
+                        Explore All Available Courses
                     </h2>
 
                     <p>
-                        Course content will be connected to
-                        the platform database after requirements
-                        and course structures are finalized.
+                        Master in-demand tech skills with hands-on labs, guided mentor sessions, and career-focused certifications.
                     </p>
                 </div>
 
-                <div
-                    id="course-list"
-                    class="course-grid"
-                    aria-live="polite"
-                >
-                    <div class="state state--empty">
-                        <h3>
-                            No courses available yet
-                        </h3>
+                <!-- Category Filter Pills -->
+                <nav class="course-filters" aria-label="Course category filters" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <a href="courses.html#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__dot" style="background-color: #ea580c;"></span>
+                        <span class="hero-badge__text">All Tracks</span>
+                    </a>
+                    <a href="courses.html?category=Programming#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__text">Programming</span>
+                    </a>
+                    <a href="courses.html?category=Cybersecurity#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__text">Cybersecurity</span>
+                    </a>
+                    <a href="courses.html?category=Data%20%26%20Analytics#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__text">Data &amp; Analytics</span>
+                    </a>
+                    <a href="courses.html?category=Web%20Development#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__text">Web Development</span>
+                    </a>
+                    <a href="courses.html?category=Cloud%20Computing#course-catalog" class="hero-badge" style="text-decoration: none; margin-bottom: 0;">
+                        <span class="hero-badge__text">Cloud &amp; DevOps</span>
+                    </a>
+                </nav>
 
-                        <p>
-                            Courses will appear here once they
-                            are added through the platform.
-                        </p>
+                <div id="course-list" class="course-grid" aria-live="polite">
+                    <div class="state state--empty">
+                        <h3>No courses available yet</h3>
+                        <p>Courses will appear here once they are added through the platform.</p>
                     </div>
                 </div>
 
@@ -96,9 +203,12 @@
     <div id="site-footer"></div>
 
     <script src="js/components/navbar.js" defer></script>
-<script src="js/components/footer.js" defer></script>
-<script src="js/components/course-card.js" defer></script>
-<script src="js/public/courses.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
+    <script src="js/services/course-service.js" defer></script>
+    <script src="js/components/course-card.js" defer></script>
+    <script src="js/public/courses.js" defer></script>
 
 </body>
+
 </html>

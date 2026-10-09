@@ -1,0 +1,26 @@
+[
+  {
+    "id": "programming",
+    "name": "Programming",
+    "description": "Build strong programming fundamentals and practical development skills.",
+    "icon": "code"
+  },
+  {
+    "id": "data",
+    "name": "Data & Analytics",
+    "description": "Learn how to work with data, databases and analytics tools.",
+    "icon": "chart"
+  },
+  {
+    "id": "web-development",
+    "name": "Web Development",
+    "description": "Create modern, responsive and interactive websites and applications.",
+    "icon": "globe"
+  },
+  {
+    "id": "career",
+    "name": "Career Skills",
+    "description": "Develop professional and workplace skills for career growth.",
+    "icon": "briefcase"
+  }
+]

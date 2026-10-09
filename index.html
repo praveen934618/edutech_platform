@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Education platform foundation."
-    >
+    <meta name="description" id="meta-description" content="Education platform.">
 
-    <meta
-        name="robots"
-        content="index,follow"
-    >
+    <meta name="robots" content="index,follow">
 
-    <title>Education Platform</title>
+    <title id="page-title">
+        Education Platform
+    </title>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -35,65 +29,384 @@
 
     <main>
 
-        <section class="hero-section">
-            <div class="container">
+        <!-- Hero Section (Matches Uploaded Design with Project Adapted Content) -->
+        <section class="hero-section" aria-label="Hero Section">
+            <div class="hero-container">
 
-                <p class="eyebrow">
-                    Platform Foundation
-                </p>
+                <!-- Left Column: Content & Actions -->
+                <div class="hero-content">
 
-                <h1>
-                    Learn. Grow. Build your future.
-                </h1>
+                    <!-- Eyebrow Pill Badge -->
+                    <div class="hero-badge" id="hero-eyebrow">
+                        <span class="hero-badge__dot"></span>
+                        <span class="hero-badge__text">Your personal career mentor</span>
+                    </div>
 
-                <p class="hero-description">
-                    A flexible education platform foundation
-                    designed for courses, learning and growth.
-                </p>
+                    <!-- Heading with Sparkle -->
+                    <h1 class="hero-title" id="hero-title">
+                        Accelerate your skills with <span class="hero-sparkle" aria-hidden="true">✨</span> personalized
+                        guidance
+                    </h1>
 
-                <div class="hero-actions">
-                    <a
-                        href="courses.html"
-                        class="button button--primary"
-                    >
-                        Explore Courses
-                    </a>
+                    <!-- Description -->
+                    <p class="hero-description" id="hero-description">
+                        This isn’t just another learning portal. It’s an interactive tech education platform that adapts
+                        to you, tracks your progress, and builds job-ready skills with every module.
+                    </p>
 
-                    <a
-                        href="about.html"
-                        class="button button--secondary"
-                    >
-                        Learn More
-                    </a>
+                    <!-- Dual Pill Action Buttons -->
+                    <div class="hero-actions">
+                        <a href="courses.html" class="hero-btn-primary" id="hero-primary-button">
+                            <span class="hero-btn__text">Try it now</span>
+                            <span class="hero-btn__arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="courses.html" class="hero-btn-secondary" id="hero-secondary-button">
+                            <span class="hero-btn__text">Build your path</span>
+                            <span class="hero-btn__symbol" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                                    <circle cx="2" cy="12" r="1.5" />
+                                    <rect x="6" y="8" width="3" height="6" rx="1.5" />
+                                    <rect x="11" y="4" width="3" height="10" rx="1.5" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Visual Progress Graphic & Floating Dock -->
+                <div class="hero-visual" aria-hidden="true">
+
+                    <!-- Ambient Warm Glow Background with Radiant Stripes -->
+                    <div class="hero-glow">
+                        <div class="hero-glow__beam hero-glow__beam--1"></div>
+                        <div class="hero-glow__beam hero-glow__beam--2"></div>
+                        <div class="hero-glow__beam hero-glow__beam--3"></div>
+                        <div class="hero-glow__beam hero-glow__beam--4"></div>
+                    </div>
+
+                    <!-- Floating Skill Pill: Left ("Programming") -->
+                    <div class="hero-floating-pill hero-floating-pill--left">
+                        <span>Programming</span>
+                    </div>
+
+                    <!-- Floating Skill Pill: Top Right ("Data & Analytics") -->
+                    <div class="hero-floating-pill hero-floating-pill--top-right">
+                        <span>Data &amp; Analytics</span>
+                    </div>
+
+                    <!-- Floating Skill Pill: Bottom Right ("Languages") -->
+                    <div class="hero-floating-pill hero-floating-pill--bottom-right">
+                        <span>Languages</span>
+                    </div>
+
+                    <!-- Main Progress Card -->
+                    <div class="hero-card">
+                        <span class="hero-card__label">Learning progress score</span>
+                        <div class="hero-card__score">92%</div>
+
+                        <!-- 4-Column Bar Chart -->
+                        <div class="hero-chart">
+                            <!-- Column 1: Feb -->
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">66%</span>
+                                <div class="hero-chart__bar hero-chart__bar--striped" style="height: 98px;">
+                                    <div class="hero-chart__stripe-texture"></div>
+                                </div>
+                                <span class="hero-chart__month">Feb</span>
+                            </div>
+
+                            <!-- Column 2: Mar -->
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">87%</span>
+                                <div class="hero-chart__bar hero-chart__bar--neutral" style="height: 125px;"></div>
+                                <span class="hero-chart__month">Mar</span>
+                            </div>
+
+                            <!-- Column 3: May (Active Glowing Pill) -->
+                            <div class="hero-chart__col hero-chart__col--active">
+                                <span class="hero-chart__val">92%</span>
+                                <div class="hero-chart__bar hero-chart__bar--active" style="height: 154px;"></div>
+                                <span class="hero-chart__month">May</span>
+                            </div>
+
+                            <!-- Column 4: Jun -->
+                            <div class="hero-chart__col">
+                                <span class="hero-chart__val">72%</span>
+                                <div class="hero-chart__bar hero-chart__bar--striped" style="height: 108px;">
+                                    <div class="hero-chart__stripe-texture"></div>
+                                </div>
+                                <span class="hero-chart__month">Jun</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Bottom Dock -->
+                    <div class="hero-dock">
+                        <button type="button" class="hero-dock__btn" aria-label="Course Modules" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </button>
+
+                        <button type="button" class="hero-dock__btn" aria-label="Growth Chart" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                        </button>
+
+                        <button type="button" class="hero-dock__btn hero-dock__btn--active" aria-label="Track Progress"
+                            tabindex="-1">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2">
+                                <rect x="3" y="12" width="4" height="8" rx="1" />
+                                <rect x="10" y="8" width="4" height="12" rx="1" />
+                                <rect x="17" y="4" width="4" height="16" rx="1" />
+                            </svg>
+                            <span>Track</span>
+                        </button>
+
+                        <button type="button" class="hero-dock__btn" aria-label="Course Notes" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                            </svg>
+                        </button>
+
+                        <button type="button" class="hero-dock__btn" aria-label="Learning Target" tabindex="-1">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
-        <section class="content-section">
+
+        <!-- Statistics (Image 3 Reference with Orange Shadow & Mobile 2x2 Grid) -->
+        <section class="page-section" style="padding-block: 40px 60px;">
+            <div class="container">
+                <div class="grid grid--4 stats-grid" id="statistics-container">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Featured Courses Section (Side-by-Side Highlighted Carousel) -->
+        <section class="page-section featured-courses-section" aria-label="Featured Courses">
+
             <div class="container">
 
-                <h2>
-                    Platform Foundation
-                </h2>
+                <div class="carousel-header">
+                    <div class="carousel-header__text">
+                        <p class="eyebrow">
+                            Explore Something New
+                        </p>
 
-                <p>
-                    This is the initial technical foundation
-                    of the education platform. Client-specific
-                    content and branding will be added after
-                    requirements discovery.
-                </p>
+                        <h2 id="featured-courses-title">
+                            Explore Our Popular Courses
+                        </h2>
 
+                        <p id="featured-courses-description" class="carousel-header__desc">
+                            Choose from practical, industry-aligned courses designed for your career goals.
+                        </p>
+                    </div>
+
+                    <!-- Carousel Left / Right Navigation Buttons -->
+                    <div class="carousel-controls" aria-label="Course carousel controls">
+                        <button type="button" class="carousel-nav-btn" id="carousel-prev-btn"
+                            aria-label="Previous course" title="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                        <button type="button" class="carousel-nav-btn" id="carousel-next-btn" aria-label="Next course"
+                            title="Next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Horizontal Carousel Track (Data populated exclusively from courses.json) -->
+                <div class="courses-carousel-wrapper">
+                    <div class="courses-carousel" id="featured-courses" role="region"
+                        aria-label="Featured courses slider">
+                    </div>
+                </div>
+
+                <div class="center-content" style="margin-top: 1.5rem;">
+                    <a href="courses.html" class="hero-btn-primary" style="display: inline-flex;">
+                        <span>View All Courses</span>
+                        <span class="hero-btn__arrow" aria-hidden="true" style="margin-left: 6px;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us Section (Image 4 Reference: White Background & Frosted Glass Badges & Orange Glow) -->
+        <section class="why-choose-section" id="why-choose-us-section" aria-label="Why Choose Us">
+            <div class="container">
+                <div class="why-choose-header">
+                    <div class="why-choose-pill">
+                        <span
+                            style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#ea580c;"></span>
+                        <span>Why Choose Us</span>
+                    </div>
+                    <h2 class="why-choose-title" id="why-choose-title">Why Choose Us</h2>
+                    <p class="why-choose-desc" id="why-choose-description">
+                        Our mission is to drive progress and enhance the lives of our customers by delivering superior
+                        products and services that exceed.
+                    </p>
+                </div>
+
+                <div class="why-choose-grid">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <img src="assets/images/why-choose-1.jpg" alt="Learner studying practical software development"
+                            class="why-card__img" loading="lazy">
+                        <div class="why-card__badge">
+                            <div class="why-card__info">
+                                <span class="why-card__num">30+</span>
+                                <span class="why-card__text">Happy Clients</span>
+                            </div>
+                            <div class="why-card__crown" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <img src="assets/images/why-choose-2.jpg" alt="Educator mentoring technology career transitions"
+                            class="why-card__img" loading="lazy">
+                        <div class="why-card__badge">
+                            <div class="why-card__info">
+                                <span class="why-card__num">15+</span>
+                                <span class="why-card__text">Your Growth Partner</span>
+                            </div>
+                            <div class="why-card__crown" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <img src="assets/images/why-choose-3.jpg"
+                            alt="Senior software mentor guiding engineering workflows" class="why-card__img"
+                            loading="lazy">
+                        <div class="why-card__badge">
+                            <div class="why-card__info">
+                                <span class="why-card__num">35+</span>
+                                <span class="why-card__text">Happy Clients</span>
+                            </div>
+                            <div class="why-card__crown" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="why-card">
+                        <img src="assets/images/why-choose-4.jpg" alt="Student mastering hands-on technical labs"
+                            class="why-card__img" loading="lazy">
+                        <div class="why-card__badge">
+                            <div class="why-card__info">
+                                <span class="why-card__num">18+</span>
+                                <span class="why-card__text">Your Growth Partner</span>
+                            </div>
+                            <div class="why-card__crown" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call To Action -->
+        <section class="home-cta-section">
+            <div class="container">
+                <div class="cta-card--seamless center-content">
+                    <h2 class="cta-card__title" id="cta-title">
+                        Ready to Start Learning?
+                    </h2>
+                    <p class="cta-card__description" id="cta-description">
+                        Explore our courses and take the next step toward your professional goals.
+                    </p>
+                    <a href="courses.html" class="cta-btn--orange" id="cta-button">
+                        Browse Courses
+                    </a>
+                </div>
             </div>
         </section>
 
     </main>
 
-<div id="site-footer"></div>
+    <div id="site-footer"></div>
 
+
+    <!-- Shared Components -->
     <script src="js/components/navbar.js" defer></script>
     <script src="js/components/footer.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
+
+    <!-- Services -->
+    <script src="js/services/content-service.js" defer></script>
+    <script src="js/services/course-service.js" defer></script>
+
+    <!-- Course Card -->
+    <script src="js/components/course-card.js" defer></script>
+
+    <!-- Homepage -->
     <script src="js/public/home.js" defer></script>
 
 </body>
+
 </html>

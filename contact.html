@@ -2,28 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Contact the education platform."
-    >
-
-    <meta
-        name="robots"
-        content="index,follow"
-    >
-
-    <link
-        rel="canonical"
-        href="contact.html"
-    >
-
-    <title>Contact | Education Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with the Edutech team for support, consultations, and enterprise inquiries.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="contact.html">
+    <title>Contact Us | Edutech</title>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -39,192 +22,168 @@
     <div id="site-navbar"></div>
 
     <main>
-
-        <!-- Page introduction -->
-        <section class="content-section">
+        <!-- Contact Showcase (Designed according to Image 2) -->
+        <section class="contact-hero-section">
             <div class="container">
+                <div class="contact-showcase-grid">
 
-                <p class="eyebrow">
-                    Contact
-                </p>
-
-                <h1>
-                    Get in Touch
-                </h1>
-
-                <p>
-                    Have a question or need more information?
-                    Send us a message and we'll get back to you.
-                </p>
-
-            </div>
-        </section>
-
-        <!-- Contact content -->
-        <section class="content-section">
-            <div class="container">
-
-                <div class="grid grid--2">
-
-                    <!-- Contact information -->
-                    <div>
-
-                        <h2>
-                            Contact Information
-                        </h2>
-
-                        <p>
-                            Contact details will be configured
-                            after the client's requirements and
-                            business information are finalized.
+                    <!-- Left Column: Contact Form Card -->
+                    <div class="contact-form-card">
+                        <div class="contact-eyebrow">Get in Touch</div>
+                        <h1 class="contact-heading">Let's Chat, Reach Out to Us</h1>
+                        <p class="contact-subheading">
+                            Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours.
                         </p>
 
-                        <div class="stack">
-
-                            <div class="card">
-
-                                <h3>
-                                    Email
-                                </h3>
-
-                                <p>
-                                    Contact email coming soon.
-                                </p>
-
+                        <form id="contact-form" class="form" novalidate>
+                            <div class="contact-form__row">
+                                <div class="contact-form__field">
+                                    <label for="contact-first-name">First Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="contact-first-name" 
+                                        name="firstName" 
+                                        placeholder="First name" 
+                                        autocomplete="given-name" 
+                                        required
+                                    >
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="contact-last-name">Last Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="contact-last-name" 
+                                        name="lastName" 
+                                        placeholder="Last name" 
+                                        autocomplete="family-name" 
+                                        required
+                                    >
+                                </div>
                             </div>
 
-                            <div class="card">
-
-                                <h3>
-                                    Phone
-                                </h3>
-
-                                <p>
-                                    Contact phone number coming soon.
-                                </p>
-
-                            </div>
-
-                            <div class="card">
-
-                                <h3>
-                                    Address
-                                </h3>
-
-                                <p>
-                                    Business address coming soon.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Contact form -->
-                    <div>
-
-                        <h2>
-                            Send a Message
-                        </h2>
-
-                        <form
-                            id="contact-form"
-                            class="form"
-                            novalidate
-                        >
-
-                            <div class="form-group">
-
-                                <label for="contact-name">
-                                    Name
-                                </label>
-
-                                <input
-                                    id="contact-name"
-                                    name="name"
-                                    type="text"
-                                    autocomplete="name"
+                            <div class="contact-form__field">
+                                <label for="contact-email">Email Address</label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    placeholder="Email address" 
+                                    autocomplete="email" 
                                     required
                                 >
-
                             </div>
 
-                            <div class="form-group">
-
-                                <label for="contact-email">
-                                    Email
-                                </label>
-
-                                <input
-                                    id="contact-email"
-                                    name="email"
-                                    type="email"
-                                    autocomplete="email"
-                                    required
-                                >
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="contact-subject">
-                                    Subject
-                                </label>
-
-                                <input
-                                    id="contact-subject"
-                                    name="subject"
-                                    type="text"
-                                    required
-                                >
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="contact-message">
-                                    Message
-                                </label>
-
-                                <textarea
-                                    id="contact-message"
-                                    name="message"
-                                    rows="6"
+                            <div class="contact-form__field">
+                                <label for="contact-message">Message</label>
+                                <textarea 
+                                    id="contact-message" 
+                                    name="message" 
+                                    rows="5" 
+                                    placeholder="Leave us message" 
                                     required
                                 ></textarea>
-
                             </div>
 
-                            <button
-                                type="submit"
-                                class="button button--primary"
-                            >
+                            <label class="contact-checkbox-label" for="contact-agree">
+                                <input type="checkbox" id="contact-agree" name="agree" required checked>
+                                <span>I agree to our friendly <a href="terms.html">privacy policy</a></span>
+                            </label>
+
+                            <button type="submit" class="contact-submit-btn" id="contact-submit-button">
                                 Send Message
                             </button>
 
-                            <div
-                                id="contact-form-state"
-                                class="state"
-                                aria-live="polite"
-                                hidden
-                            ></div>
-
+                            <div id="contact-form-state" class="state" aria-live="polite" hidden style="margin-top: 16px;"></div>
                         </form>
+                    </div>
 
+                    <!-- Right Column: Visual Photo + Direct Channels -->
+                    <div class="contact-info-column">
+                        <!-- Top Image Card -->
+                        <div class="contact-image-card">
+                            <img 
+                                src="assets/images/contact-support.jpg" 
+                                alt="Edutech senior support advisor" 
+                                class="contact-image"
+                                loading="eager"
+                            >
+                        </div>
+
+                        <!-- Bottom 2 Contact Cards -->
+                        <div class="contact-channels-grid">
+                            <!-- Email Card -->
+                            <div class="contact-channel-card">
+                                <div class="contact-channel-icon-circle">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-channel-info">
+                                    <div class="contact-channel-title">Email</div>
+                                    <div class="contact-channel-value">techteam@edutech.com</div>
+                                </div>
+                            </div>
+
+                            <!-- Phone Card -->
+                            <div class="contact-channel-card">
+                                <div class="contact-channel-icon-circle" style="background: #fff7ed; color: #ea580c;">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-channel-info">
+                                    <div class="contact-channel-title">Phone</div>
+                                    <div class="contact-channel-value">(0252) 8324 9231</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-
             </div>
         </section>
 
+        <!-- Global Campus & Help Center Section -->
+        <section class="content-section" style="background: #ffffff; padding: 70px 0; border-top: 1px solid #f1f5f9;">
+            <div class="container">
+                <div style="text-align: center; max-width: 680px; margin: 0 auto 48px;">
+                    <span class="eyebrow" style="color: var(--color-primary-600); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8125rem;">Global Network</span>
+                    <h2 style="font-size: 2.25rem; font-weight: 800; color: #0f172a; margin-top: 8px;">Frequently Inquired Topics</h2>
+                    <p style="color: #64748b; font-size: 1.0625rem; margin-top: 10px;">Fast answers to commonly asked enrollment, enterprise training, and mentor questions.</p>
+                </div>
+
+                <div class="grid grid--3">
+                    <article class="stat-card" style="text-align: left; padding: 28px 24px;">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Admission & Enrolling</h3>
+                        <p style="color: #64748b; font-size: 0.9rem; line-height: 1.55;">
+                            All courses include lifetime syllabus access, automated laboratory sandboxes, and recognized credentials.
+                        </p>
+                    </article>
+
+                    <article class="stat-card" style="text-align: left; padding: 28px 24px;">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Enterprise Cohorts</h3>
+                        <p style="color: #64748b; font-size: 0.9rem; line-height: 1.55;">
+                            Custom team curriculums with manager progress reports and dedicated senior technical instructors.
+                        </p>
+                    </article>
+
+                    <article class="stat-card" style="text-align: left; padding: 28px 24px;">
+                        <h3 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">1-on-1 Office Hours</h3>
+                        <p style="color: #64748b; font-size: 0.9rem; line-height: 1.55;">
+                            Schedule code reviews and architectural advice sessions directly with senior staff engineers.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div id="site-footer"></div>
 
     <script src="js/components/navbar.js" defer></script>
     <script src="js/components/footer.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
     <script src="js/public/contact.js" defer></script>
 
 </body>

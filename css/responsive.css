@@ -1,22 +1,129 @@
 /* =========================================
+   Navbar Breakpoint
+   ========================================= */
+
+@media (max-width: 1180px) and (min-width: 993px) {
+    .site-header__container {
+        padding-inline: var(--space-4);
+        gap: var(--space-2);
+    }
+
+    .site-header__left {
+        gap: 12px;
+    }
+
+    .nav-search {
+        width: 145px;
+    }
+
+    .nav-search:focus-within {
+        width: 145px;
+    }
+
+    .nav-search__shortcut {
+        display: none;
+    }
+
+    .nav-trigger,
+    .nav-link {
+        padding: 6px 9px;
+        font-size: 0.8125rem;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .nav-actions__link {
+        padding: 6px 8px;
+        font-size: 0.8125rem;
+    }
+
+    .nav-btn-demo {
+        padding: 7px 14px;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .nav-desktop,
+    .nav-actions,
+    .site-header__left .nav-search {
+        display: none !important;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+    }
+
+    .site-header__container {
+        min-height: 62px;
+        padding-inline: var(--space-4);
+    }
+
+    .mobile-nav {
+        top: 62px;
+    }
+}
+
+@media (min-width: 993px) {
+
+    .menu-toggle {
+        display: none !important;
+    }
+
+    .mobile-nav,
+    .mobile-nav-backdrop {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-inline: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        max-width: 420px;
+        margin-inline: auto;
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .hero-floating-pill--left {
+        left: -10px;
+    }
+
+    .hero-floating-pill--top-right {
+        right: -10px;
+    }
+
+    .hero-floating-pill--bottom-right {
+        right: -8px;
+    }
+}
+
+/* =========================================
    Tablet
    ========================================= */
 
 @media (max-width: 900px) {
-
-    .site-navigation {
-        flex-wrap: wrap;
-
-        padding-block: var(--space-4);
-    }
-
-    .site-navigation__links {
-        width: 100%;
-
-        justify-content: center;
-
-        gap: var(--space-4);
-    }
 
     .grid--4 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -42,73 +149,42 @@
         );
     }
 
-    .site-navigation {
-        position: relative;
-
-        min-height: 64px;
-
-        flex-wrap: wrap;
-        align-items: center;
-
-        padding-block: var(--space-3);
-    }
-
-    .site-logo {
-        font-size: var(--font-size-lg);
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .site-navigation__links {
-        display: none;
-
-        width: 100%;
-
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 0;
-
-        padding-top: var(--space-3);
-    }
-
-    .site-navigation__links.is-open {
-        display: flex;
-    }
-
-    .site-navigation__links a {
-        width: 100%;
-
-        padding:
-            var(--space-3)
-            var(--space-2);
-
-        border-top: 1px solid var(--color-border);
-
-        color: var(--color-text);
-
-        font-size: var(--font-size-md);
-    }
-
-    .site-navigation__links a:hover,
-    .site-navigation__links a:focus-visible {
-        background: var(--color-background);
-        color: var(--color-primary);
+    .site-logo__text {
+        font-size: 1.125rem;
     }
 
     .hero-section {
-        padding-block: var(--space-16);
+        padding-block: var(--space-12) var(--space-16);
     }
 
     .hero-actions {
         flex-direction: column;
-        align-items: stretch;
+        width: 100%;
     }
 
-    .hero-actions .button {
+    .hero-btn-primary,
+    .hero-btn-secondary {
         width: 100%;
+        justify-content: center;
+    }
+
+    .hero-card {
+        padding: 24px 18px 20px;
+    }
+
+    .hero-chart {
+        gap: 8px;
+    }
+
+    .hero-floating-pill {
+        display: none;
+    }
+
+    .hero-dock {
+        width: calc(100% - 32px);
+        justify-content: space-around;
+        gap: 6px;
+        padding: 5px 8px;
     }
 
     .grid--2,
@@ -121,5 +197,285 @@
     .content-section,
     .page-section {
         padding-block: var(--space-12);
+    }
+}
+
+/* =========================================
+   Mobile Courses Rolling Stack Effect
+   ========================================= */
+
+@media (max-width: 768px) {
+    .carousel-controls {
+        display: none;
+    }
+
+    .courses-carousel-wrapper {
+        padding-block: 10px 30px;
+        overflow: visible;
+    }
+
+    .courses-carousel {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        overflow: visible;
+        padding: 10px 0 20px;
+        perspective: 1200px;
+    }
+
+    .courses-carousel .course-card {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        position: sticky;
+        top: 80px;
+        margin-bottom: 20px;
+        transform-origin: top center;
+        box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.08), 0 12px 28px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+}
+
+/* =========================================
+   Auth Split Card Responsiveness
+   ========================================= */
+
+@media (max-width: 960px) {
+    .auth-page-section {
+        padding-block: var(--space-4) var(--space-10);
+    }
+
+    .auth-card-container {
+        flex-direction: column;
+        min-height: auto;
+        border-radius: 18px;
+    }
+
+    .auth-panel {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+    }
+
+    .auth-card-container.is-register-mode .auth-panel--form,
+    .auth-card-container.is-register-mode .auth-panel--showcase {
+        transform: none !important;
+    }
+
+    .auth-panel--form {
+        padding: 32px 24px;
+        order: 1;
+    }
+
+    .auth-panel--showcase {
+        padding: 36px 24px;
+        order: 2;
+    }
+
+    .auth-mobile-tabs {
+        display: inline-flex;
+    }
+
+    .auth-partners__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    .auth-panel--form {
+        padding: 26px 18px;
+    }
+
+    .auth-panel--showcase {
+        padding: 30px 18px;
+    }
+
+    .auth-showcase-title {
+        font-size: 1.6rem;
+    }
+
+    .auth-title {
+        font-size: 1.6rem;
+    }
+
+    .auth-actions-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .auth-partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .course-detail-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .course-detail-hero__title {
+        font-size: 1.85rem;
+    }
+}
+
+/* =========================================
+   About Us & Contact Showcase Responsive
+   ========================================= */
+@media (max-width: 992px) {
+    .about-showcase-grid,
+    .contact-showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-story-card {
+        padding: 36px 28px;
+    }
+
+    .contact-form-card {
+        padding: 36px 28px;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .edutech-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        text-align: center;
+    }
+
+    .edutech-footer__left,
+    .edutech-footer__center,
+    .edutech-footer__right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edutech-footer__socials {
+        justify-content: center;
+    }
+
+    .edutech-footer__links {
+        text-align: center;
+        align-items: center;
+    }
+
+    .edutech-footer__flowchart {
+        width: 100%;
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    .edutech-footer__subrow {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+/* Mobile: Two cards side by side for Stats, Course Cards & Why Choose Us */
+@media (max-width: 768px) {
+    .stats-grid,
+    #statistics-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+    }
+
+    .stat-card {
+        padding: 22px 14px;
+        border-radius: 18px;
+        box-shadow: 0 10px 26px -6px rgba(234, 88, 12, 0.22);
+    }
+
+    .stat-card__number {
+        font-size: 1.65rem;
+    }
+
+    .stat-card__label {
+        font-size: 0.8125rem;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+    }
+
+    .about-stat-tile {
+        padding: 20px 14px;
+    }
+
+    .about-stat-tile__number {
+        font-size: 1.6rem;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+    }
+
+    .why-card {
+        height: 260px;
+        border-radius: 18px;
+    }
+
+    .why-card__badge {
+        padding: 10px 12px;
+        border-radius: 14px;
+    }
+
+    .why-card__num {
+        font-size: 1.2rem;
+    }
+
+    .why-card__label {
+        font-size: 0.72rem;
+    }
+
+    .why-card__icon-wrap {
+        width: 26px;
+        height: 26px;
+    }
+
+    .contact-form__row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-story-title,
+    .about-story-title {
+        font-size: 2rem;
+    }
+
+    /* Course cards responsive orange shadow */
+    .course-card {
+        box-shadow: 0 10px 26px -6px rgba(234, 88, 12, 0.22) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-story-card,
+    .contact-form-card {
+        padding: 26px 18px;
+        border-radius: 20px;
+    }
+
+    .stat-card {
+        padding: 18px 10px;
+    }
+
+    .stat-card__number {
+        font-size: 1.4rem;
+    }
+
+    .stat-card__label {
+        font-size: 0.75rem;
     }
 }

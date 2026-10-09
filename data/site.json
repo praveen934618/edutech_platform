@@ -1,0 +1,90 @@
+{
+  "siteName": "Edutech",
+  "shortName": "Edutech",
+  "tagline": "Learn. Build. Grow.",
+  "description": "A modern learning platform providing practical, career-focused training in technology and professional skills.",
+  "logo": "assets/images/logo.svg",
+  "favicon": "assets/images/favicon.ico",
+  "contact": {
+    "email": "techteam@edutech.com",
+    "phone": "(0252) 8324 9231",
+    "whatsapp": "(0252) 8324 9231",
+    "address": "Harju maakond, Tallinn, Kesklinna linnaosa, Vesivärava tn 50-201, 10152"
+  },
+  "social": {
+    "facebook": "#",
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "url": "index.html"
+    },
+    {
+      "label": "Courses",
+      "url": "courses.html"
+    },
+    {
+      "label": "About",
+      "url": "about.html"
+    },
+    {
+      "label": "Contact",
+      "url": "contact.html"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Your personal career mentor",
+    "title": "Accelerate your skills with <span class=\"hero-sparkle\">✨</span> personalized guidance",
+    "description": "This isn't just another learning portal. It's an interactive tech education platform that adapts to you, tracks your progress, and builds job-ready skills with every module.",
+    "primaryButton": {
+      "label": "Try it now",
+      "url": "courses.html"
+    },
+    "secondaryButton": {
+      "label": "Build your path",
+      "url": "courses.html"
+    }
+  },
+  "homepage": {
+    "featuredCoursesTitle": "Explore Our Popular Courses",
+    "featuredCoursesDescription": "Choose from practical courses designed to help you develop valuable skills and move toward your career goals.",
+    "whyChooseUsTitle": "Why Choose Us",
+    "whyChooseUsDescription": "Our mission is to drive progress and enhance the lives of our customers by delivering superior products and services that exceed.",
+    "ctaTitle": "Ready to Start Learning?",
+    "ctaDescription": "Explore our courses and take the next step toward your professional goals.",
+    "ctaButtonLabel": "Browse Courses",
+    "ctaButtonUrl": "courses.html"
+  },
+  "statistics": [
+    {
+      "value": "25+",
+      "label": "Courses"
+    },
+    {
+      "value": "1,500+",
+      "label": "Learners"
+    },
+    {
+      "value": "40+",
+      "label": "Projects"
+    },
+    {
+      "value": "10+",
+      "label": "Expert Mentors"
+    }
+  ],
+  "seo": {
+    "title": "Edutech | Global Learning Transformation",
+    "description": "Learn technology and professional skills through practical, career-focused courses on Edutech.",
+    "keywords": [
+      "online courses",
+      "technology training",
+      "programming courses",
+      "data science",
+      "web development",
+      "career training"
+    ]
+  }
+}

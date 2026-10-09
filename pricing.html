@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent and flexible pricing plans for Edutech. Choose between Starter, Pro Career Track, and Enterprise to accelerate your tech career.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="pricing.html">
+    <title>Pricing & Plans | Edutech</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <div id="site-navbar"></div>
+
+    <main>
+
+        <!-- Pricing Hero Section -->
+        <section class="pricing-hero">
+            <div class="hero-badge" style="margin-bottom: 16px;">
+                <span class="hero-badge__dot"></span>
+                <span class="hero-badge__text">Predictable, transparent plans</span>
+            </div>
+
+            <h1 class="hero-title" style="margin-bottom: 16px;">
+                Invest in your career with <span class="hero-sparkle" aria-hidden="true">✨</span> flexible pricing
+            </h1>
+
+            <p class="hero-description" style="margin: 0 auto; max-width: 620px;">
+                Everything you need to master production-grade software engineering, from beginner fundamentals to advanced capstones and 1-on-1 industry mentorship.
+            </p>
+
+            <!-- Billing Cycle Toggle (Monthly vs Annual) -->
+            <div class="pricing-billing-toggle" role="group" aria-label="Billing cycle selector">
+                <button type="button" class="billing-toggle__btn is-active" id="btn-monthly">
+                    Monthly Billing
+                </button>
+                <button type="button" class="billing-toggle__btn" id="btn-annual">
+                    Annual Billing
+                    <span class="billing-toggle__discount">Save 25%</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 3 Tier Pricing Grid -->
+        <section class="pricing-grid" aria-label="Pricing tiers">
+
+            <!-- Plan 1: Starter -->
+            <div class="pricing-card">
+                <h2 class="pricing-card__title">Starter Track</h2>
+                <p class="pricing-card__desc">Ideal for hobbyists and students exploring foundational programming concepts.</p>
+                
+                <div class="pricing-card__price-row">
+                    <span class="pricing-card__currency">₹</span>
+                    <span class="pricing-card__amount" id="price-starter">1,999</span>
+                    <span class="pricing-card__period" id="period-starter">/month</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Access to 5 Core Introductory Tracks</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>In-Browser Live Coding Sandboxes</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Community Peer Support & Forum</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Standard Digital Completion Badges</span>
+                    </li>
+                    <li class="pricing-feature-item" style="color: #94a3b8;">
+                        <span class="pricing-feature-icon" style="background: #f1f5f9; color: #94a3b8;">&times;</span>
+                        <span style="text-decoration: line-through;">1-on-1 Senior Mentor Reviews</span>
+                    </li>
+                    <li class="pricing-feature-item" style="color: #94a3b8;">
+                        <span class="pricing-feature-icon" style="background: #f1f5f9; color: #94a3b8;">&times;</span>
+                        <span style="text-decoration: line-through;">Job Placement Assistance</span>
+                    </li>
+                </ul>
+
+                <a href="register.html" class="pricing-btn pricing-btn--outline">
+                    Start 7-Day Free Trial
+                </a>
+            </div>
+
+            <!-- Plan 2: Pro Career Track (Featured & Popular) -->
+            <div class="pricing-card pricing-card--popular">
+                <div class="pricing-badge-popular">Most Popular</div>
+
+                <h2 class="pricing-card__title">Pro Career Track</h2>
+                <p class="pricing-card__desc">Complete engineering immersion with verified production projects and dedicated mentors.</p>
+                
+                <div class="pricing-card__price-row">
+                    <span class="pricing-card__currency">₹</span>
+                    <span class="pricing-card__amount" id="price-pro">4,999</span>
+                    <span class="pricing-card__period" id="period-pro">/month</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <strong>Full Access to All 25+ Career Tracks</strong>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Unlimited Cloud Sandboxes & Lab Time</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Production Capstones & PR Code Reviews</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Monthly 1-on-1 Mentor Strategy Calls</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Verified Industry Certificate & LinkedIn Credential</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Mock Technical Interviews & Resume Review</span>
+                    </li>
+                </ul>
+
+                <a href="register.html" class="pricing-btn pricing-btn--primary">
+                    Enroll with Pro Access &rarr;
+                </a>
+            </div>
+
+            <!-- Plan 3: Enterprise & Teams -->
+            <div class="pricing-card">
+                <h2 class="pricing-card__title">Enterprise / Teams</h2>
+                <p class="pricing-card__desc">For tech organizations and universities upskilling teams with custom learning paths.</p>
+                
+                <div class="pricing-card__price-row">
+                    <span class="pricing-card__currency">₹</span>
+                    <span class="pricing-card__amount" id="price-enterprise">9,999</span>
+                    <span class="pricing-card__period" id="period-enterprise">/seat/month</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>All Pro Features for Team Members</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Custom Learning Tracks & Internal Curriculums</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Manager Analytics & Skill Progress Dashboard</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>Dedicated Corporate Mentor & Slack Channel</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>SAML / SSO & LMS API Integrations</span>
+                    </li>
+                    <li class="pricing-feature-item">
+                        <span class="pricing-feature-icon">&check;</span>
+                        <span>24/7 Priority SLA & Dedicated Success Manager</span>
+                    </li>
+                </ul>
+
+                <button type="button" class="pricing-btn pricing-btn--outline" onclick="document.getElementById('nav-demo-btn') && document.getElementById('nav-demo-btn').click()">
+                    Book a Team Demo
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Feature Comparison Matrix -->
+        <section class="pricing-matrix-section">
+            <div class="section-heading" style="text-align: center; margin-bottom: 32px;">
+                <p class="eyebrow">Detailed Breakdown</p>
+                <h2>Compare Plan Capabilities</h2>
+            </div>
+
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%;">Platform Features</th>
+                            <th style="width: 20%; text-align: center;">Starter</th>
+                            <th style="width: 20%; text-align: center; color: #ea580c;">Pro Career Track</th>
+                            <th style="width: 20%; text-align: center;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Total Courses Available</strong></td>
+                            <td style="text-align: center;">5 Tracks</td>
+                            <td style="text-align: center; font-weight: 700; color: #ea580c;">All 25+ Tracks</td>
+                            <td style="text-align: center;">All Tracks + Custom</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Browser Live Sandboxes</strong></td>
+                            <td style="text-align: center;">Standard</td>
+                            <td style="text-align: center; color: #ea580c;">High-Performance</td>
+                            <td style="text-align: center;">Dedicated Cloud Nodes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personal Mentor Support</strong></td>
+                            <td style="text-align: center;">Forum Only</td>
+                            <td style="text-align: center; color: #ea580c;">1-on-1 Monthly Video Calls</td>
+                            <td style="text-align: center;">Dedicated Private Mentor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code & PR Reviews</strong></td>
+                            <td style="text-align: center;">Automated Tests</td>
+                            <td style="text-align: center; color: #ea580c;">Human Senior Staff Review</td>
+                            <td style="text-align: center;">Custom Criteria Review</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Accredited Certificate</strong></td>
+                            <td style="text-align: center;">Digital Badge</td>
+                            <td style="text-align: center; color: #ea580c;">Verified Industry Certificate</td>
+                            <td style="text-align: center;">Co-branded Corporate Cert</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Career Services & Mock Interviews</strong></td>
+                            <td style="text-align: center;">&times;</td>
+                            <td style="text-align: center; color: #ea580c;">&check;</td>
+                            <td style="text-align: center;">Custom Recruiting Pipeline</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Team Analytics Dashboard</strong></td>
+                            <td style="text-align: center;">&times;</td>
+                            <td style="text-align: center;">&times;</td>
+                            <td style="text-align: center; color: #ea580c;">&check;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seamless CTA matching Home Page -->
+        <section class="home-cta-section">
+            <div class="container">
+                <div class="cta-card--seamless center-content">
+                    <h2 class="cta-card__title" id="cta-title">
+                        Ready to Start Learning?
+                    </h2>
+                    <p class="cta-card__description" id="cta-description">
+                        Join 1,500+ developers upskilling on Edutech. Start your 7-day risk-free trial today.
+                    </p>
+                    <a href="register.html" class="cta-btn--orange" id="cta-button">
+                        Get Started Now &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/components/navbar.js" defer></script>
+    <script src="js/components/footer.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
+
+    <!-- Pricing Billing Switch Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btnMonthly = document.getElementById('btn-monthly');
+            const btnAnnual = document.getElementById('btn-annual');
+            const priceStarter = document.getElementById('price-starter');
+            const pricePro = document.getElementById('price-pro');
+            const priceEnterprise = document.getElementById('price-enterprise');
+            const periodStarter = document.getElementById('period-starter');
+            const periodPro = document.getElementById('period-pro');
+            const periodEnterprise = document.getElementById('period-enterprise');
+
+            if (btnMonthly && btnAnnual) {
+                btnMonthly.addEventListener('click', function () {
+                    btnMonthly.classList.add('is-active');
+                    btnAnnual.classList.remove('is-active');
+                    if (priceStarter) priceStarter.textContent = '1,999';
+                    if (pricePro) pricePro.textContent = '4,999';
+                    if (priceEnterprise) priceEnterprise.textContent = '9,999';
+                    if (periodStarter) periodStarter.textContent = '/month';
+                    if (periodPro) periodPro.textContent = '/month';
+                    if (periodEnterprise) periodEnterprise.textContent = '/seat/month';
+                });
+
+                btnAnnual.addEventListener('click', function () {
+                    btnAnnual.classList.add('is-active');
+                    btnMonthly.classList.remove('is-active');
+                    if (priceStarter) priceStarter.textContent = '1,499';
+                    if (pricePro) pricePro.textContent = '3,749';
+                    if (priceEnterprise) priceEnterprise.textContent = '7,499';
+                    if (periodStarter) periodStarter.textContent = '/mo (billed annually)';
+                    if (periodPro) periodPro.textContent = '/mo (billed annually)';
+                    if (periodEnterprise) periodEnterprise.textContent = '/seat/mo (annual)';
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

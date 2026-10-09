@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@600;700&display=swap");
+
 :root {
+    /* =========================================
+       Navbar & Header Tokens
+       ========================================= */
+
+    --color-nav-bg: #ffffff;
+    --color-nav-text: #374151;
+    --color-nav-text-hover: #111827;
+    --color-nav-active-pill: #fbf5ee;
+    --color-nav-active-text: #111827;
+    --color-nav-badge-orange: #ea580c;
+    --color-nav-badge-green: #16a34a;
+    --color-nav-badge-blue: #2563eb;
+    --color-nav-badge-purple: #7c3aed;
+    --color-nav-badge-teal: #0d9488;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
     /* =========================================
        Color System
        ========================================= */
@@ -30,19 +48,15 @@
        ========================================= */
 
     --gradient-hero:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #2563eb 0%,
             #7c3aed 50%,
-            #ec4899 100%
-        );
+            #ec4899 100%);
 
     --gradient-button:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #2563eb,
-            #7c3aed
-        );
+            #7c3aed);
 
 
     /* =========================================
@@ -50,6 +64,7 @@
        ========================================= */
 
     --font-heading:
+        "Plus Jakarta Sans",
         "Poppins",
         "Segoe UI",
         Arial,
